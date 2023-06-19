@@ -1,33 +1,41 @@
 ## README
 
-The NHDPlusERG R package uses the **NHDPlus** database to extract data from COMID useful to **ERG**. This package uses functions from package *nhdplusTools*, cited below. 
+The NHDPlusERG R package uses the **NHDPlus** database to extract data from COMID useful to **ERG**. This package uses functions from package *nhdplusTools*, cited below.
 
 ### dependencies
 
-This package requires R packages *devtools, nhdplusTools, sf, ggplot, and here*
+This package requires R packages *devtools, nhdplusTools, ggplot, and sf*
 
 ### directions
 
 install and load devtools:
+
 ```{r}
 install.packages("devtools")
 library(devtools)
 ```
-install and load NHDPlusERG:
+
+install NHDPlusERG and load NHDPlusERG with dependencies:
+
 ```{r}
 install_github("kentcod/NHDPlusERG")
 library(NHDPlusERG)
+library(nhdplusTools)
+library(sf)
+library(ggplot2)
 ```
-consult help menu for information on each function 
+
+### Functions
+
+functions found in this package match COMID to FIPS county code and map said relationship.
+
+for additional info, consult help menu for information on each function
+
 ```{r}
 ?COMID.FIPS
 ?map.FIPS
 ```
 
-
 ### References
 
-Blodgett, D., Johnson, J.M., 2022, nhdplusTools: Tools for
-Accessing and Working with the NHDPlus,
-https://doi.org/10.5066/P97AS8JD
-
+Blodgett, D., Johnson, J.M., 2022, nhdplusTools: Tools for Accessing and Working with the NHDPlus, <https://doi.org/10.5066/P97AS8JD>
