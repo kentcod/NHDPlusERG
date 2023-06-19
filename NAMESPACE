@@ -1,3 +1,7 @@
 exportPattern("^[[:alpha:]]+")
 export("polygons")
 export(COMID.FIPS)
+import(ggplot2)
+import(sf)
+import(nhdplusTools)
+import(here)
