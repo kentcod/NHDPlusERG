@@ -2,7 +2,7 @@ Package: NHDPlusERG
 Type: Package
 Title: This package uses COMID to extract useful data from NHDPlus
 Version: 0.1.0
-Maintainer: Kent Codding @ <coddingk@gmail.com>
+Maintainer: Kent Codding <coddingk@gmail.com>
 Description: This package contains functions that give the county code (FIPS) for a given COMID. This package also has functions that map where the COMID is in the country.
 Encoding: UTF-8
 LazyData: true
