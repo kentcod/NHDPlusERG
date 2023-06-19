@@ -118,7 +118,9 @@ map.FIPS <- function(overlay){
     geom_sf() +
     geom_sf(data = overlay, color = "blue") +
     geom_text(data = polygons, aes(x = xcent, y = ycent, label = FIPS), color = "red", fontface = "bold") +
-    coord_sf(xlim = c(minx, maxx), ylim = c(miny, maxy))
+    coord_sf(xlim = c(minx, maxx), ylim = c(miny, maxy)) +
+    xlab("Latitude") +
+    ylab("Longitude")
 }
 #COMID to first 10 FIPS function
 #user directions: enter COMID, function typically takes 10-15 seconds to run
@@ -154,8 +156,9 @@ map.FIPSflow <- function(overlay){
     geom_sf() +
     geom_text(data = polygons, aes(x = xcent, y = ycent, label = FIPS), color = "red", fontface = "bold") +
     geom_text(data = overlay, aes(x = latitude, y = longitude, label = FIPS), color = "blue", size = 2.5) +
-    coord_sf(xlim = c(minx, maxx), ylim = c(miny, maxy))
-
+    coord_sf(xlim = c(minx, maxx), ylim = c(miny, maxy)) +
+    xlab("Latitude") +
+    ylab("Longitude")
 }
 
 #' @title zoomed out COMID and FIPS map
@@ -183,5 +186,7 @@ map.FIPSzoomout <- function(overlay){
     geom_sf() +
     geom_sf(data = overlay, color = "blue") +
     geom_text(data = polygons, aes(x = xcent, y = ycent, label = FIPS), color = "red", fontface = "bold") +
-    coord_sf(xlim = c(minx, maxx), ylim = c(miny, maxy))
+    coord_sf(xlim = c(minx, maxx), ylim = c(miny, maxy)) +
+    xlab("Latitude")+
+    ylab("Longitude")
 }
