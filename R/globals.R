@@ -9,6 +9,6 @@ if (any(installed_packages == FALSE)) {
 # Packages loading
 lapply(packages, library, character.only = TRUE)
 
-setwd("C:/Users/Kent Codding/Desktop/ERG Summer 2023")
-FIPS <- st_read("UScounties") #read county FIPS map provided by esri
+data_file <- system.file("data", "UScounties", package = "NHDPlusERG")
+FIPS <- st_read(data_file) #read county FIPS map provided by esri
 polygons <- st_make_valid(FIPS) #get rid of 1 anomaly
