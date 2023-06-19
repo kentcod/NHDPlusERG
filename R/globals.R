@@ -1,12 +1,4 @@
-if (requireNamespace("ggplot2", quietly = TRUE)) {
-  library(ggplot2)
-}
-if (requireNamespace("sf", quietly = TRUE)) {
-  library(sf)
-}
-if (requireNamespace("nhdplusTools", quietly = TRUE)) {
-  library(nhdplusTools)
-}
+
 if (requireNamespace("here", quietly = TRUE)) {
   library(here)
 }
