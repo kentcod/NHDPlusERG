@@ -1,13 +1,15 @@
-packages <- c("ggplot2", "sf", "nhdplusTools", "here")
-
-# Install packages not yet installed
-installed_packages <- packages %in% rownames(installed.packages())
-if (any(installed_packages == FALSE)) {
-  install.packages(packages[!installed_packages])
+if (requireNamespace("ggplot2", quietly = TRUE)) {
+  library(ggplot2)
 }
-
-# Packages loading
-lapply(packages, library, character.only = TRUE)
+if (requireNamespace("sf", quietly = TRUE)) {
+  library(sf)
+}
+if (requireNamespace("nhdplusTools", quietly = TRUE)) {
+  library(nhdplusTools)
+}
+if (requireNamespace("here", quietly = TRUE)) {
+  library(here)
+}
 
 data_folder <- here::here("data", "UScounties")
 FIPS <- st_read(data_folder) #read county FIPS map provided by esri

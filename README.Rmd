@@ -1,6 +1,33 @@
 ## README
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+The NHDPlusERG R package uses the **NHDPlus** database to extract data from COMID useful to **ERG**. This package uses functions from package *nhdplusTools*, cited below. 
 
-Repository for ERG using the NHDPlus database to extract data from COMID
+### dependencies
+
+This package requires R packages *devtools, nhdplusTools, sf, ggplot, and here*
+
+### directions
+
+install and load devtools:
+```{r}
+install.packages("devtools")
+library(devtools)
+```
+install and load NHDPlusERG:
+```{r}
+install_github("kentcod/NHDPlusERG")
+library(NHDPlusERG)
+```
+consult help menu for information on each function 
+```{r}
+?COMID.FIPS
+?map.FIPS
+```
+
+
+### References
+
+Blodgett, D., Johnson, J.M., 2022, nhdplusTools: Tools for
+Accessing and Working with the NHDPlus,
+https://doi.org/10.5066/P97AS8JD
 

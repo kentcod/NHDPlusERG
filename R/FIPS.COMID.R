@@ -92,7 +92,8 @@ COMID.FIPSgeo <- function(COMID){
 #' @author Kent Codding
 #' @description
 #' after running 1 of the 3 COMID to FIPS functions, simply enter "overlay" as the sole argument to return the map of COMID within its county code
-#' @usage MUST RUN 1 of the 3 COMID to FIPS functions to produce an sf object that will be used to map the spatial overlay between COMID and FIPS
+#' @usage
+#' MUST RUN 1 of the 3 COMID to FIPS functions to produce an sf object that will be used to map the spatial overlay between COMID and FIPS
 #' @param overlay as sf object
 #'
 #' @return map with points that represent NHDPlus coordinates for that given COMID
@@ -128,7 +129,8 @@ map.FIPS <- function(overlay){
 #' @author Kent Codding
 #' @description
 #' after running 1 of the 3 COMID to FIPS functions, simply enter "overlay" as the sole argument to return the map of COMID within its county code
-#' @usage MUST RUN 1 of the 3 COMID to FIPS functions to produce an sf object that will be used to map the spatial overlay between COMID and FIPS
+#' @usage
+#' MUST RUN 1 of the 3 COMID to FIPS functions to produce an sf object that will be used to map the spatial overlay between COMID and FIPS
 #' @param overlay as sf object
 #'
 #' @return zoomed in map of county codes that represent NHDPlus coordinates for that given COMID. COMIDs with larger spatial extent typically show a flowline in the form of FIPS codes
