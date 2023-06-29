@@ -192,3 +192,27 @@ map.FIPSzoomout <- function(overlay){
     xlab("Latitude")+
     ylab("Longitude")
 }
+FIPS.demo <- function(overlay){
+  suppressWarnings({
+    counts <- table(as.numeric(overlay$FIPS)) #create a table showing instances of each code
+    mode <- as.numeric(names(counts))[which.max(counts)] #find which name (FIPS codes) has most counts
+    demolist <- list(FIPS = mode)
+    state <- demolist$FIPS %/% 1000 #integer division first 2 digits
+    county <- demolist$FIPS %% 1000 #remainder function gives last 3 digits
+    American.Indian <- get_acs(geography = 'county', variables = "B02001_004", state = state, county = county)
+    demolist$American.Indian <- American.Indian$estimate
+    Asian <- get_acs(geography = 'county', variables = "B02001_005", state = state, county = county)
+    demolist$Asian <- Asian$estimate
+    Black <- get_acs(geography = 'county', variables = "B02001_003", state = state, county = county)
+    demolist$Black <- Black$estimate
+    Latino <- get_acs(geography = 'county', variables = "B02001_009", state = state, county = county)
+    demolist$Latino <- Latino$estimate
+    Other <- get_acs(geography = 'county', variables = "B02001_007", state = state, county = county)
+    demolist$Other <- Other$estimate
+    White <- get_acs(geography = 'county', variables = "B02001_002", state = state, county = county)
+    demolist$White <- White$estimate
+    Total <- get_acs(geography = 'county', variables = "B02001_001", state = state, county = county)
+    demolist$Total <- Total$estimate
+    return(unlist(demolist))
+  })
+}
