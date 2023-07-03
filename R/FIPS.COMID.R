@@ -192,6 +192,19 @@ map.FIPSzoomout <- function(overlay){
     xlab("Latitude")+
     ylab("Longitude")
 }
+#COMID to Most Common FIPS function
+#user directions: enter overlay after running any of the three COMID to FIPS functions
+#' @title FIPS to ACS Demographics
+#' @author Kent Codding
+#' @description
+#' This function uses the county code to extract census data: a major factor when considering environmental harms.
+#' Demographics can be further assessed through an environmental lens to consider any communities disproportionately affected by pollutants at the location of certain COMIDs.
+#' @usage returns demographics for a given FIPS code
+#' @param overlay as an sf object
+#' @seealso [COMID.FIPS()]
+#' @return a named numeric vector of American Indian, Asian, Black, Latino, Other, White, and Total population found within given FIPS
+#'
+#' @examples FIPS.demo(overlay)
 FIPS.demo <- function(overlay){
   suppressWarnings({
     counts <- table(as.numeric(overlay$FIPS)) #create a table showing instances of each code
