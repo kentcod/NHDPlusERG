@@ -28,15 +28,17 @@ library(tidycensus)
 
 ### Functions
 
-functions found in this package match COMID to FIPS county code and map said relationship.
+functions found in this package match COMID to FIPS county code and map said relationship. Functions also extract population demographics from ACS using county code.
 
 for additional info, consult help menu for information on each function
 
 ```{r}
 ?COMID.FIPS
 ?map.FIPS
+?COMID.demo
 ```
 
 ### References
 
 Blodgett, D., Johnson, J.M., 2022, nhdplusTools: Tools for Accessing and Working with the NHDPlus, <https://doi.org/10.5066/P97AS8JD>
+Walker, K., 2021, tidycensus: Load US Census Boundary and Attribute Data as 'tidyverse' and 'sf'-Ready Data Frames. R package version 1.2.3. Retrieved from https://CRAN.R-project.org/package=tidycensus
