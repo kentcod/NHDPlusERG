@@ -4,7 +4,7 @@
 \alias{map.FIPS}
 \title{COMID and FIPS map}
 \usage{
-MUST RUN 1 of the 3 COMID to FIPS functions to produce an sf object that will be used to map the spatial overlay between COMID and FIPS
+visualize where COMID is
 }
 \arguments{
 \item{overlay}{as sf object}

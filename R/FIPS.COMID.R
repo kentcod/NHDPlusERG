@@ -192,7 +192,6 @@ map.FIPSzoomout <- function(overlay){
     xlab("Latitude")+
     ylab("Longitude")
 }
-#COMID to Most Common FIPS function
 #user directions: enter overlay after running any of the three COMID to FIPS functions
 #' @title FIPS to ACS Demographics
 #' @author Kent Codding
@@ -203,7 +202,6 @@ map.FIPSzoomout <- function(overlay){
 #' @param overlay as an sf object
 #' @seealso [COMID.FIPS()]
 #' @return a named numeric vector of American Indian, Asian, Black, Latino, Other, White, and Total population found within given FIPS
-#'
 #' @examples FIPS.demo(overlay)
 FIPS.demo <- function(overlay){
   suppressWarnings({
