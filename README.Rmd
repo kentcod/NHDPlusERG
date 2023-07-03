@@ -28,13 +28,14 @@ library(tidycensus)
 
 ### Functions
 
-functions found in this package match COMID to FIPS county code and map said relationship.
+functions found in this package match COMID to FIPS county code and map said relationship. Functions also extract population demographics from ACS using county code.
 
 for additional info, consult help menu for information on each function
 
 ```{r}
 ?COMID.FIPS
 ?map.FIPS
+?COMID.demo
 ```
 
 ### References
