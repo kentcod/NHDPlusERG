@@ -14,13 +14,13 @@ a named numeric vector of American Indian, Asian, Black, Latino, Other, White, a
 }
 \description{
 This function uses the county code to extract census data: a major factor when considering environmental harms.
-Demographics can be further assessed through an environmental lens to consider any communities disproportionately affected by pollutants at the location of certain COMIDs.
+Demographics can be further assessed through an environmental justice lens to consider any communities disproportionately affected by pollutants at the location of certain COMIDs.
 }
 \examples{
 FIPS.demo(overlay)
 }
 \seealso{
-[COMID.FIPS()]
+[COMID.FIPS()][COMID.demo()]
 }
 \author{
 Kent Codding

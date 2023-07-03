@@ -19,6 +19,9 @@ The plant AES Cayuga LLC (COMID = 21980363) on Cuyaga Lake borders both Tompkins
 \examples{
 COMID.FIPS(21980363) will return 36109 36109 36109 36109 36099 36099
 }
+\seealso{
+[COMID.FIPS()][COMID.FIPSgeo()][COMID.all.demo()]
+}
 \author{
 Kent Codding
 }

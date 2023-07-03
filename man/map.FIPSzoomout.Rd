@@ -9,6 +9,9 @@ map.FIPSzoomout(overlay)
 \description{
 this function is just a zoomed out version of map.FIPS
 }
+\seealso{
+[map.FIPS()][map.FIPSflow()][COMID.FIPS()]
+}
 \author{
 Kent Codding
 }

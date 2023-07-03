@@ -18,6 +18,9 @@ after running 1 of the 3 COMID to FIPS functions, simply enter "overlay" as the 
 \examples{
 map.FIPS(overlay)
 }
+\seealso{
+[COMID.FIPS()][map.FIPSflow()][map.FIPSzoomout()]
+}
 \author{
 Kent Codding
 }
